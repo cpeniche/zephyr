@@ -6,11 +6,10 @@
 #
 
 config SOC_SERIES_LPC17XX
-	bool "LPC LPC54xxx Series MCU"
+	bool "LPC LPC17xx Series MCU"
 	select CPU_CORTEX_M
 	select CPU_CORTEX_M3
-	select SOC_FAMILY_LPC
-	select SYS_POWER_LOW_POWER_STATE_SUPPORTED
+	select SOC_FAMILY_LPC	
 	select CPU_HAS_SYSTICK
 	help
 	  Enable support for LPC LPC17XX MCU series

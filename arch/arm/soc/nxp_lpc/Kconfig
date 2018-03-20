@@ -15,6 +15,14 @@ config SOC_FAMILY
 	default "nxp_lpc"
 endif
 
+config LPC17XX_ARM_MPU_ENABLE
+	bool "Enable MPU"
+	depends on CPU_HAS_MPU
+	select ARM_MPU
+	default n
+	help
+	  Enable MPU
+
 source "arch/arm/soc/nxp_lpc/*/Kconfig.soc"
 
 config SOC_PART_NUMBER

@@ -22,7 +22,7 @@ extern "C" {
 #ifndef _ASMLANGUAGE
 #include <device.h>
 #include <misc/util.h>
-#include <fsl_common.h>
+/*#include <fsl_common.h>*/
 #endif /* !_ASMLANGUAGE */
 
 #ifdef __cplusplus

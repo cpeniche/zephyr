@@ -11,7 +11,7 @@ depends on SOC_SERIES_LPC17XX
 
 config SOC_LPC1768
 	bool "SOC_LPC1768"
-	select HAS_MCUX
+#	select HAS_MCUX
 
 endchoice
 
