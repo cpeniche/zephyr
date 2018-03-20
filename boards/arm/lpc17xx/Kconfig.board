@@ -1,0 +1,10 @@
+# Kconfig - LPC1768_LANDTIGER board configuration
+#
+# Copyright (c) 2016 Linaro Limited.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config BOARD_LPC1768_LANDTIGER
+	bool "LPC1768 LANDTIGER Development Board"
+	depends on SOC_LPC1768

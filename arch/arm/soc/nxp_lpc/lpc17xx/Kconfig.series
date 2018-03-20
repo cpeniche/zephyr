@@ -1,0 +1,16 @@
+# Kconfig - LPC LPC17XX MCU line
+#
+# Copyright (c) 2017, NXP
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config SOC_SERIES_LPC17XX
+	bool "LPC LPC54xxx Series MCU"
+	select CPU_CORTEX_M
+	select CPU_CORTEX_M3
+	select SOC_FAMILY_LPC
+	select SYS_POWER_LOW_POWER_STATE_SUPPORTED
+	select CPU_HAS_SYSTICK
+	help
+	  Enable support for LPC LPC17XX MCU series

@@ -1,0 +1,7 @@
+identifier: lpc1768_landtiger
+name: LPC1768-LANDTIGER
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gccarmemb

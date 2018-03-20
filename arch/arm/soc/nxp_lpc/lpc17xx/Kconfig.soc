@@ -1,0 +1,32 @@
+# Kconfig - LPC LPC54XXX MCU line
+#
+# Copyright (c) 2017, NXP
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+choice
+prompt "LPC LPC17XX MCU Selection"
+depends on SOC_SERIES_LPC17XX
+
+config SOC_LPC1768
+	bool "SOC_LPC1768"
+	select HAS_MCUX
+
+endchoice
+
+if SOC_SERIES_LPC17XX
+
+config SOC_PART_NUMBER_LPC1768
+	bool
+
+config SOC_PART_NUMBER_LPC17XX
+	string
+	default "LPC1768" if SOC_PART_NUMBER_LPC1768
+
+	help
+	  This string holds the full part number of the SoC. It is a hidden
+	  option that you should not set directly. The part number selection
+	  choice defines the default value for this string.
+
+endif # SOC_SERIES_LPC17XX
